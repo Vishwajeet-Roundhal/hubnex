@@ -1,0 +1,164 @@
+.sales-cta {
+    padding: 24px;
+    margin: 24px;
+  }
+  
+  .cta-container {
+    margin-left: 5%;
+    width: 90%;
+    background-color: #2563eb;
+    border-radius: 24px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px;
+    align-items: center;
+  }
+  
+  .cta-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .cta-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cta-content {
+    color: white;
+  }
+  
+  .cta-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+  
+  .cta-description {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 32px;
+  }
+  
+  .social-proof {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  
+  .avatar-group {
+    display: flex;
+    margin-right: 8px;
+  }
+  
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #2563eb;
+    background: white;
+    margin-left: -8px;
+  }
+  
+  .avatar:first-child {
+    margin-left: 0;
+  }
+  
+  .companies-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .primary-button {
+    background-color: white;
+    color: #2563eb;
+  }
+  
+  .primary-button:hover {
+    background-color: #f8fafc;
+  }
+  
+  .secondary-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .secondary-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 1024px) {
+    .cta-heading {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cta-container {
+      grid-template-columns: 1fr;
+      padding: 32px;
+    }
+  
+    .cta-image-wrapper {
+      height: 300px;
+      order: -1;
+    }
+  
+    .cta-heading {
+      font-size: 32px;
+    }
+  
+    .cta-description {
+      font-size: 16px;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+    }
+  
+    .cta-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .sales-cta {
+      padding: 16px;
+      margin: 16px;
+    }
+  
+    .cta-container {
+      padding: 24px;
+    }
+  
+    .cta-image-wrapper {
+      height: 240px;
+    }
+  }
+  
+  

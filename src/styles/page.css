@@ -1,0 +1,168 @@
+/* Page Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #f8f9fa;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 280px;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    width: 275px;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 8px;
+    z-index: 10;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px 20px;
+  }
+  
+  .dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li:hover {
+    background: #f0f0f0;
+  }
+  
+  .hero-background {
+    position: relative;
+  }
+  
+  .hero-background::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Position it at the bottom */
+    width: 300px;
+    height: 430px;
+    background: url("https://www.hubnex.in/hero/second.gif") no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .hero-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0; /* Position it at the top right */
+    width: 250px; /* Adjust size */
+    height: 568px; /* Adjust size */
+    background: url("https://www.hubnex.in/hero/Circle.png") no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+  
+  
+  
+  .hero {
+    position: relative;
+    z-index: 1;
+    padding: 48px;
+  }
+  
+  .partner-pill {
+    background-color: white; /* bg-black */
+    color: black; /* text-white */
+    padding: 4px 16px; /* px-4 py-1 */
+    border-radius: 9999px; /* rounded-full */
+    font-size: 0.875rem; /* text-sm */
+    white-space: nowrap; /* whitespace-nowrap */
+  }
+
+  .partner-pill span {
+    background-color: black;
+    color: white; /* text-black */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    white-space: nowrap; /* whitespace-nowrap */
+  }
+
+  
+  
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .button-primary {
+    background: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .button-outline {
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+  }
+  
+  .rating {
+    margin-bottom: 24px;
+  }
+  
+  .stars {
+    color: gold;
+    font-size: 18px;
+  }
+  

@@ -1,0 +1,136 @@
+.case-studies {
+    padding: 80px 24px;
+    background-color: #ffffff;
+  }
+  
+  .case-studies-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Align the header and grid side by side */
+    justify-content: space-between;
+    gap: 24px; /* Space between the title/description and the case study cards */
+  }
+  
+  .case-studies-header {
+    max-width: 600px;
+    margin-bottom: 48px;
+  }
+  
+  .case-studies-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  
+  .case-studies-description {
+    font-size: 18px;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  .case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 0 -24px;
+    padding: 0 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .case-studies-grid::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .case-study-card {
+    min-width: 320px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    scroll-snap-align: start;
+  }
+  
+  .case-study-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .case-study-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+  
+  .case-study-content {
+    padding: 24px;
+  }
+  
+  .case-study-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 12px;
+  }
+  
+  .case-study-excerpt {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  .read-more-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .read-more-link:hover {
+    color: #1d4ed8;
+  }
+  
+  @media (max-width: 1024px) {
+    .case-studies-container {
+      flex-direction: column; /* Stack the header and grid vertically for tablets */
+    }
+  
+    .case-studies-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .case-studies {
+      padding: 48px 16px;
+    }
+  
+    .case-studies-title {
+      font-size: 32px;
+    }
+  
+    .case-studies-description {
+      font-size: 16px;
+    }
+  
+    .case-studies-grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+    }
+  
+    .case-study-card {
+      min-width: 280px;
+    }
+  }
+  

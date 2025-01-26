@@ -1,0 +1,187 @@
+.metrics-section {
+    padding: 80px 24px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .metrics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .certifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    margin-bottom: 48px;
+  }
+  
+  .certification-logo {
+    height: 60px;
+    width: auto;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+  
+  .certification-logo:hover {
+    opacity: 1;
+  }
+  
+  .main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 0 auto 32px;
+    color: #111827;
+  }
+  
+  .social-proof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .companies-joined {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4b5563;
+  }
+  
+  .avatar-group {
+    display: flex;
+    margin-right: 8px;
+  }
+  
+  .avatar-group img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -8px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4b5563;
+  }
+  
+  .stars {
+    color: #ffb800;
+    display: flex;
+    gap: 2px;
+  }
+  
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    margin: 16px 0 48px;
+  }
+  
+  .cta-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .cta-button.outline {
+    background-color: transparent;
+    border: 1px solid #111827;
+    color: #111827;
+  }
+  
+  .cta-button.outline:hover {
+    background-color: #111827;
+    color: white;
+  }
+  
+  .secondary-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #111827;
+  }
+  
+  .secondary-description {
+    color: #6b7280;
+    margin-bottom: 32px;
+  }
+  
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  
+  .metric-card {
+    text-align: left;
+  }
+  
+  .metric-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 8px;
+  }
+  
+  .metric-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+  
+  .metric-description {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 1024px) {
+    .metrics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .metrics-section {
+      padding: 48px 16px;
+    }
+  
+    .certifications {
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+  
+    .certification-logo {
+      height: 48px;
+    }
+  
+    .main-heading {
+      font-size: 36px;
+    }
+  
+    .secondary-heading {
+      font-size: 28px;
+    }
+  
+    .metrics-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+  
+  
